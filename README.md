@@ -1,1 +1,30 @@
-# bd-barbearia-kelven-gulane**Autor:** Kelven Jossamo Gulane — Licenciatura em Informática, Universidade Licungo**Disciplina:** Tecnologias de Base de Dados (2º ano)**Tema:** Gestão de uma barbearia (clientes, barbeiros, serviços e marcações)**Vídeo:** *(colocar aqui o link do YouTube)*## ProblemaNuma barbearia as marcações são feitas por telefone ou num caderno, o que causa horários sobrepostos, perda de registos e dificuldade em saber quanto cada serviço rendeu. A base de dados guarda clientes, barbeiros, serviços e marcações, e o preço cobrado em cada serviço.## Regras de negócio1. Um cliente pode fazer várias marcações; cada marcação pertence a um só cliente.2. Cada marcação é atendida por um só barbeiro, e um barbeiro não pode ter duas marcações na mesma data e hora.3. Uma marcação tem um ou mais serviços (itens); o item só existe dentro da marcação.4. O preço cobrado fica guardado no item, para o histórico não mudar se o preço do serviço mudar.5. O estado da marcação é: agendada, concluída ou cancelada.6. O telefone do cliente e do barbeiro é único.7. Preço e duração dos serviços são sempre positivos.8. O utilizador do sistema tem perfil admin, barbeiro ou cliente.## Sistema web previstoSite com login: o cliente regista-se, vê serviços e faz marcações; o barbeiro vê a sua agenda e conclui atendimentos; o admin gere clientes, barbeiros e serviços (registar, listar, pesquisar, alterar e eliminar).## Ficheiros`diagrama\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_er.png` · `modelo\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_relacional.md` · `01\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_criacao\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_e\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_insercao.sql` · `02\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_manipulacao.sql`
+# bd-barbearia-kelven-gulane
+
+**Autor:** Kelven Jossamo Gulane — Licenciatura em Informática, Universidade Licungo
+**Disciplina:** Tecnologias de Base de Dados (2º ano)
+**Tema:** Gestão de uma barbearia (clientes, barbeiros, serviços e marcações)
+**Vídeo:** *(https://youtu.be/RvyLoixGVjg)*
+
+## Problema
+
+Numa barbearia as marcações são feitas por telefone ou num caderno, o que causa horários sobrepostos, perda de registos e dificuldade em saber quanto cada serviço rendeu. A base de dados guarda clientes, barbeiros, serviços e marcações, e o preço cobrado em cada serviço.
+
+## Regras de negócio
+
+1. Um cliente pode fazer várias marcações; cada marcação pertence a um só cliente.
+2. Cada marcação é atendida por um só barbeiro, e um barbeiro não pode ter duas marcações na mesma data e hora.
+3. Uma marcação tem um ou mais serviços (itens); o item só existe dentro da marcação.
+4. O preço cobrado fica guardado no item, para o histórico não mudar se o preço do serviço mudar.
+5. O estado da marcação é: agendada, concluída ou cancelada.
+6. O telefone do cliente e do barbeiro é único.
+7. Preço e duração dos serviços são sempre positivos.
+8. O utilizador do sistema tem perfil admin, barbeiro ou cliente.
+
+## Sistema web previsto
+
+Site com login: o cliente regista-se, vê serviços e faz marcações; o barbeiro vê a sua agenda e conclui atendimentos; o admin gere clientes, barbeiros e serviços (registar, listar, pesquisar, alterar e eliminar).
+
+## Ficheiros
+
+`diagrama\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_er.png` · `modelo\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_relacional.md` · `01\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_criacao\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_e\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_insercao.sql` · `02\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_manipulacao.sql`
+
